@@ -1,0 +1,15 @@
+<template name="layout">
+  This one WORKS
+    {{> loginButtons}}
+  <a href="/" class="btn btn-info btn-sm">Home </a>
+  <a href="/friends" class="btn btn-info btn-sm">Friends</a>
+  <br>
+  {{#if currentUser}}
+  {{> yield}}
+  {{else}}
+  You must log in to use this app
+  {{/if}}
+  <br>
+  Footer goes here ...
+
+</template>
